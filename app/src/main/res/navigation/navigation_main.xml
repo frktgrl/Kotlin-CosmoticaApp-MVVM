@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ftgrl.cosmotica.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.ftgrl.cosmotica.ui.fragment.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite">
+
+    <argument
+        android:name="product"
+        app:argType="com.ftgrl.cosmotica.data.entity.Product" />
+
+    </fragment>
+
+
+
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ftgrl.cosmotica.ui.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.ftgrl.cosmotica.ui.fragment.CategoryFragment"
+        android:label="CategoryFragment">
+
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryFragment_to_productInfoFragment"
+            app:destination="@id/productInfoFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/productInfoFragment"
+        android:name="com.ftgrl.cosmotica.ui.fragment.ProductInfoFragment"
+        android:label="ProductInfoFragment" >
+
+        <argument
+            android:name="product"
+            app:argType="com.ftgrl.cosmotica.data.entity.Product" />
+
+    </fragment>
+
+
+</navigation>

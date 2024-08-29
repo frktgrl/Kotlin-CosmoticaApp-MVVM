@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "210540241421",
+    "project_id": "cosmotica-6aa2f",
+    "storage_bucket": "cosmotica-6aa2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210540241421:android:25f0070c8292dff6486b44",
+        "android_client_info": {
+          "package_name": "com.ftgrl.cosmotica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAev47LvzzDczfpWl9AR510qmxSfmDJ33o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
